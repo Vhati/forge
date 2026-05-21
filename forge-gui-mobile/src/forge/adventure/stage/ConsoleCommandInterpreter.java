@@ -130,7 +130,7 @@ public class ConsoleCommandInterpreter {
     private ConsoleCommandInterpreter() {
         registerCommand(new String[]{"teleport", "to"}, s -> {
             if (s.length < 2)
-                return "Command needs 2 parameter";
+                return "Command needs 2 parameters";
             try {
                 int x = Integer.parseInt(s[0]);
                 int y = Integer.parseInt(s[1]);
